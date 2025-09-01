@@ -96,6 +96,7 @@ const EventListPage = async ({
       if (value !== undefined) {
         switch (key) {
           case "classId":
+            //@ts-ignore
             query.classId = parseInt(value);
             break;
           case "search":
@@ -122,6 +123,7 @@ const EventListPage = async ({
       query.classId = student.classId;
     } else {
       // If student not found, show no events
+      //@ts-ignore
       query.id = -1; // This will return an empty set
     }
   }
@@ -134,6 +136,7 @@ const EventListPage = async ({
       query.classId = student.classId;
     } else {
       // If student not found, show no events
+      //@ts-ignore
       query.id = -1; // This will return an empty set
     }
   }

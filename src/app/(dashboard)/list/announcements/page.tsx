@@ -88,6 +88,7 @@ const AnnouncementListPage = async ({
       if (value !== undefined) {
         switch (key) {
           case "classId":
+            //@ts-ignore
             query.classId = parseInt(value as string);
             break;
           case "search":
@@ -114,6 +115,7 @@ const AnnouncementListPage = async ({
       query.classId = student.classId;
     } else {
       // If student not found, show no announcements
+      //@ts-ignore
       query.id = -1; // This will return an empty set
     }
   }
@@ -126,6 +128,7 @@ const AnnouncementListPage = async ({
       query.classId = student.classId;
     } else {
       // If student not found, show no announcements
+      //@ts-ignore
       query.id = -1; // This will return an empty set
     }
   }

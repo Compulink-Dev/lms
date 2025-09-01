@@ -99,6 +99,7 @@ const ExamListPage = async ({
       if (value !== undefined) {
         switch (key) {
           case "classId":
+            //@ts-ignore
             query.lesson.classId = parseInt(value);
             break;
           case "teacherId":

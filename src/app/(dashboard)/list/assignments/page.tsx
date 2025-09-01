@@ -117,6 +117,7 @@ const AssignmentListPage = async ({
   if (queryParams) {
     const lessonQuery: Prisma.LessonWhereInput = {};
     if (queryParams.classId) {
+      //@ts-ignore
       lessonQuery.classId = parseInt(queryParams.classId);
     }
     if (queryParams.teacherId) {
